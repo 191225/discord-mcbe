@@ -125,6 +125,7 @@ class World extends EventEmitter {
     return tags.includes(tag);
   }
   
+  // by Kinji | https://twitter.com/commanderkinji
   async getScores(player) {
     const res = await this.runCommand(`scoreboard players list "${player}"`);
     if (res.error) return res;
